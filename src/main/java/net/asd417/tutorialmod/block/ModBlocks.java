@@ -2,6 +2,7 @@ package net.asd417.tutorialmod.block;
 
 import net.asd417.tutorialmod.TutorialMod;
 import net.asd417.tutorialmod.block.custom.MagicBlock;
+import net.asd417.tutorialmod.block.custom.PedestalBlock;
 import net.asd417.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
@@ -43,7 +44,11 @@ public class ModBlocks {
             () -> new MagicBlock(BlockBehaviour.Properties.of()
                     .strength(2f)
                     .requiresCorrectToolForDrops()
+                    .randomTicks()
                     .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> PEDESTAL = registerBlock("pedestal",
+            () -> new PedestalBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block)
     {

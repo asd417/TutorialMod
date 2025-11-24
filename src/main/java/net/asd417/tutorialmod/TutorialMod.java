@@ -1,6 +1,7 @@
 package net.asd417.tutorialmod;
 
 import net.asd417.tutorialmod.block.ModBlocks;
+import net.asd417.tutorialmod.block.entity.ModBlockEntities;
 import net.asd417.tutorialmod.item.ModCreativeModeTabs;
 import net.asd417.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -40,6 +41,7 @@ public class TutorialMod {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

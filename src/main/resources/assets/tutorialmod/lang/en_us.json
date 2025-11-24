@@ -7,5 +7,6 @@
   "creativetab.tutorialmod.bismuth_items" : "Bismuth Items",
   "creativetab.tutorialmod.bismuth_blocks" : "Bismuth Blocks",
   "item.tutorialmod.chisel": "Chisel",
-  "block.tutorialmod.magic_block": "Block of Magic"
+  "block.tutorialmod.magic_block": "Block of Magic",
+  "block.tutorialmod.pedestal" : "Pedestal"
 }
